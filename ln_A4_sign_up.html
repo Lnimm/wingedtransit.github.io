@@ -1,0 +1,76 @@
+<!-- Loren Nimmo - ITC293 A4 portfolio website - 08/06/2025 -->
+
+<!-- sign_up.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Winged Transit | Newsletter Signup</title>
+  <link rel="stylesheet" href="css/portfolio.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body onload="welcomeMessage()">
+
+  <!-- Header -->
+  <header> 
+    <img src="images/logo.png" alt="Winged Transit Logo" class="logo">
+    <a href="ln_A4_coming_soon.html" class="button-header">Book Now</a>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-button">Home</a>
+    <a href="ln_A4_about.html" class="nav-button">About</a>
+    <a href="ln_A4_newsletter.html" class="nav-button">Newsletter</a>
+    <a href="ln_A4_resume.html" class="nav-button">Resume</a>
+    <a href="ln_A4_skills.html" class="nav-button">Skills</a>
+  </nav>
+
+  <!-- Signup Form -->
+  <main>
+    <h1 class="section-title centered">Welcome to the Winged Transit Newsletter Signup</h1>
+    <form action="ln_A4_submit_form.html" method="get" class="contact-form" onsubmit="return validateForm()">
+
+    <!-- <form action="http://csusap.csu.edu.au/cgi-bin/echo_form" method="post" class="contact-form" onsubmit="return validateForm()"> 
+    I attempted to get this to work but was unable to, so I am using alternative method per assignment instructions. 
+    NOTE: Using method="get" instead of "post" due to GitHub pages not supporting server-side form handling.
+    Simulates form submission for assignment requirements. -->
+
+      <label for="firstName">First Name: <span class="required">*</span></label>
+      <input type="text" id="firstName" name="firstName" maxlength="60" required>
+
+      <label for="lastName">Last Name: <span class="required">*</span></label>
+      <input type="text" id="lastName" name="lastName" maxlength="60" required>
+
+      <label for="email">Email Address: <span class="required">*</span></label>
+      <input type="email" id="email" name="email" maxlength="60" required>
+
+      <p>Age Range:</p>
+      <label><input type="radio" name="age" value="15-25"> 15–25</label>
+      <label><input type="radio" name="age" value="26-35"> 26–35</label>
+      <label><input type="radio" name="age" value="36-45"> 36–45</label>
+      <label><input type="radio" name="age" value="46-55"> 46–55</label>
+      <label><input type="radio" name="age" value="55+"> 55+</label>
+
+      <p>Interested Services:</p>
+      <label><input type="checkbox" name="services" value="Urban Flights"> City Flights</label>
+      <label><input type="checkbox" name="services" value="Regional Flights"> Regional Flights</label>
+      <label><input type="checkbox" name="services" value="Charter Services"> Charter Services</label>
+      <label><input type="checkbox" name="services" value="Airport Transfers"> Airport Transfers</label>
+      <label><input type="checkbox" name="services" value="Subscription Plans"> Yearly Plans</label>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" cols="60" rows="3"></textarea>
+
+      <button type="submit" class="button-dark">Submit</button>
+      <button type="reset" class="button-dark">Reset</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Loren Nimmo | 11785096<br><br>
+    Contact: <a href="mailto:loren.nimmo@email.com" class="contact-link">loren.nimmo@email.com</a> | All content is original or used with permission.
+  </footer>
+</body>
+</html>
