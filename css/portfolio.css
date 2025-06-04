@@ -273,8 +273,16 @@
   color: #EAC370;
 }
  
- /* Web Skills Page */
- .section-title {
+ /* Skills Pages etc. */
+.web-section-title {
+   font-size: 1.8rem;
+   color: #EAC370;
+   font-weight: 300;
+   margin-bottom: 20px;
+   text-align: center;
+ }
+
+.section-title {
    font-size: 1.8rem;
    color: #EAC370;
    font-weight: 300;
